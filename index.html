@@ -22,15 +22,27 @@
         }
         h1, h2, h3 {
             color: #333;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
         }
         p {
             color: #666;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
         }
         .contact-info {
             margin-top: 20px;
         }
         .project {
             margin-top: 30px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -81,4 +93,3 @@
     </div>
 </body>
 </html>
-
