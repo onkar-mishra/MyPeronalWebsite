@@ -3,9 +3,11 @@ import './Home.css';
 import Image from '../assests/onkar.jpeg'; 
 import { Link } from 'react-router-dom';
 import "./Navbar.css"
+import Portfolio from './Portfolio';
 
 const Home = () => {
   return (
+    <>
     <div className="home-container">
       <div className="home-content">
         <h2>HEY, I AM </h2>
@@ -18,7 +20,13 @@ const Home = () => {
       <div className="home-image">
         <img src={Image} alt="Onkar Mishra" />
       </div>
+      
     </div>
+    <div className="portfolio-section">
+    <h1 style={{ textAlign: 'center'}}>Portfolio</h1> 
+        <Portfolio />
+      </div>
+    </>
   );
 };
 
