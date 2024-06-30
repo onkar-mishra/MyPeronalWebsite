@@ -9,25 +9,43 @@
   .card {
     background-color: #f0f0f0;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 50px;
+    border-radius: 12px;
+    /* padding: 50px; */
     width: 35%;
     box-sizing: border-box;
     text-align: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     cursor: pointer;
-  }
-
-  .card:hover{
-    border: 1px solid black;
   }
   
   .card a{
     text-decoration: none;
     color: black;
+    
   }
 
-  .card a:hover{
-    color:#9ce39d;
+  .app-link{
+    align-items: center;
+    background: #bf87f1;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: .75rem;
+    height: 2rem;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 0 .5rem .5rem 0;
+    padding: 0 .75em;
+    transition: .2s ease-in;
+    vertical-align: middle;
+    white-space: nowrap;
   }
   
+  .project-name{
+    background-color: #bf87f1;
+    padding: 1px;
+  }
+  
+  .des{
+    padding: 12px;
+  }

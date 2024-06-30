@@ -7,7 +7,7 @@ const WorkExp = () => {
       <div className="cardd">
         <div className='company'>
           <h3><a href='https://bluesecures.com/' >Deskfactors</a></h3>
-          <img style={{ background : 'linear-gradient(rgba(219, 193, 193, 0.4),  #1877F2)' }} src='../assets/company-images/bluesecures_logo.jpg' />
+          <img src='../assets/company-images/bluesecures_logo.jpg' />
         </div>
         <br />
         <div className='comp-prof'>

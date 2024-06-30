@@ -41,10 +41,14 @@ const Portfolio = () => {
     <div className="portfolio-container">
       {projects.map((project) => (
         <div key={project.id} className="card">
+          <div className='project-name'> 
           <a href={project.link}><h3>{project.title}</h3></a>
+          </div>
+          <div className='des'>
           <p>{project.description}</p>
           <p>It is made using {project.technologies}.</p>
-          <a href={project.appLink}>App Link</a>
+          <a className='app-link' href={project.appLink}>App Link</a>
+        </div>
         </div>
       ))}
     </div>
