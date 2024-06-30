@@ -4,6 +4,8 @@ import Image from '../assests/onkar.jpeg';
 import { Link } from 'react-router-dom';
 import "./Navbar.css"
 import Portfolio from './Portfolio';
+import Testimonial from './Testimonials';
+import Contact from './Contact';
 
 const Home = () => {
   return (
@@ -25,6 +27,14 @@ const Home = () => {
     <div className="portfolio-section">
     <h1 style={{ textAlign: 'center'}}>Portfolio</h1> 
         <Portfolio />
+      </div>
+    <div className="testimonial-section">
+    <h1 style={{ textAlign: 'center'}}>Testimonial</h1> 
+        <Testimonial />
+      </div>
+      <div className="contact-section">
+    <h1 style={{ textAlign: 'center'}}>Contact</h1> 
+        <Contact />
       </div>
     </>
   );

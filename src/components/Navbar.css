@@ -18,7 +18,7 @@
   
   .navbar-middle ul {
     list-style-type: none;
-    margin: 0;
+    margin-left: 500px;
     padding: 0;
     display: flex;
     font-size: 25px;
