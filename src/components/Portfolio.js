@@ -6,7 +6,6 @@ const Portfolio = () => {
     <div className="portfolio-container">
 
       <div className="card">
-
         <a href='https://bluesecures.com/'><h3>BlueSecures</h3></a>
         <p>It is a secure messaging for buisness. Empolyees can message customers and those on whatsApp too. Data on mobile deleted when empolyees exit.</p>
         <p>It is made using Swift, XMPP Protocol, Core Data, Push Notification, Git hub.</p>

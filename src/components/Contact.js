@@ -36,24 +36,24 @@ const Contact = () => {
             <form action="https://getform.io/f/pbgxxzpa" method="POST">
               <div>
                 <div >
-                  <label >name</label>
+                  <label >Name</label>
                   <input type='text' name='name'/>
                 </div>
                 <div>
-                  <label >phone</label>
+                  <label >Phone</label>
                   <input type='text' name='phone'/>
                 </div>
                 <div >
-                  <label >email</label>
+                  <label >Email</label>
                   <input type='text' name='email' />
                 </div>
                 <div >
-                  <label >message</label>
+                  <label >Message</label>
                   <textarea name='message' rows="10" className='border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white resize-none' >
                   </textarea>
                 </div>
               </div>
-              <div >
+              <div className='center'>
                 <button >SEND MESSAGE</button>
               </div>
             </form>

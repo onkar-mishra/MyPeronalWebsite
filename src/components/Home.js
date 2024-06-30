@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import Image from '../assests/onkar.jpeg';
 import { Link } from 'react-router-dom';
 import "./Navbar.css"
 import Portfolio from './Portfolio';
@@ -21,7 +20,7 @@ const Home = () => {
           </div>
         </div>
         <div className="home-image">
-          <img src={Image} alt="Onkar Mishra" />
+          <img src='../assets/photo/onkar.jpeg' alt="Onkar Mishra" />
         </div>
 
       </div>
@@ -30,7 +29,7 @@ const Home = () => {
         <Portfolio />
       </div>
       <div className="work-section center">
-        <h1 >Work Experience</h1>
+        <h1 >Experiences</h1>
         <Workexp />
       </div>
       <div className="testimonial-section center">
