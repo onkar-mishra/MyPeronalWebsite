@@ -24,14 +24,15 @@ const Home = () => {
         </div>
 
       </div>
-      <div className="portfolio-section center">
-        <h1>Portfolio</h1>
-        <Portfolio />
-      </div>
       <div className="work-section center">
         <h1 >Experiences</h1>
         <Workexp />
       </div>
+      <div className="portfolio-section center">
+        <h1>Portfolio</h1>
+        <Portfolio />
+      </div>
+     
       <div className="testimonial-section center">
         <h1>Testimonial</h1>
         <Testimonial />
