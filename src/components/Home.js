@@ -17,6 +17,7 @@ const Home = () => {
             I am passionate about creating mobile applications that solve real world problems. Feel free to explore my portfolio and <br />get in touch!</p>
           <div className="navbar-right">
             <Link to="/contact" className="contact-button">Contact</Link>
+            
           </div>
         </div>
         <div className="home-image">
