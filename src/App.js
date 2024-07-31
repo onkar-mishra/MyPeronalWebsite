@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import Testimonials from './components/Testimonials';
+import Workexp from './components/Workexp';
 import Contact from './components/Contact';
 import './App.css'
 
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path='/workexp' element={<Workexp/>}/>
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
