@@ -40,15 +40,17 @@ const Portfolio = () => {
   return (
     <div className="portfolio-container">
       {projects.map((project) => (
-        <div key={project.id} className="card">
+        <div key={project.id} className="card shadow-sm col-md-6">
           <div className='project-name'> 
-          <a href={project.link}><h3>{project.title}</h3></a>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <h3>{project.title}</h3>
+            </a>
           </div>
           <div className='des'>
-          <p>{project.description}</p>
-          <p>It is made using {project.technologies}.</p>
-          <a className='app-link' href={project.appLink}>App Link</a>
-        </div>
+            <p>{project.description}</p>
+            <p><b>Technologies Used:</b> {project.technologies}</p>
+            <a className='app-link' href={project.appLink} target="_blank" rel="noopener noreferrer">App Link</a>
+          </div>
         </div>
       ))}
     </div>

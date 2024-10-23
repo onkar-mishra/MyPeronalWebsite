@@ -1,76 +1,95 @@
 .home-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #333; 
-  }
-  
-  .home-content {
-    flex: 1;
-    padding-left: 150px;
-  }
-  
-  .home-content h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .home-content p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  
-  .home-image {
-    width: 300px;
-    padding-right: 150px;
-  }
-  .center{
-    text-align: center;
-  }
-  .home-image img {
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .home-content h2::after {
-    content: "ONKAR MISHRA !!";
-    overflow: hidden;
-    display: inline-block;
-    vertical-align: bottom;
-    animation: typing 4s steps(20, end), blink-caret 0.5s step-end infinite;
-    white-space: nowrap;
-    color:rgb(100, 227, 100) 
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+  color: #333;
+}
+
+
+.home-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.navbar-right .btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+.home-content p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+.home-image img {
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.work-section,
+.portfolio-section,
+.testimonial-section,
+.contact-section {
+  padding: 40px 0;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.home-content h2::after {
+  content: "ONKAR MISHRA !!";
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: typing 4s steps(20, end), blink-caret 0.5s step-end infinite;
+  white-space: nowrap;
+  color: rgb(100, 227, 100)
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
   }
 
-  .portfolio-section {
+  to {
     width: 100%;
-    margin-top: 40px; 
   }
-  .contact-section{
-    width: 100%;
-    margin-top: 60px;
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
   }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+
+  50% {
+    border-color: rgb(100, 227, 100);
   }
-  
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: rgb(100, 227, 100) ; 
-    }
+}
+
+@media (max-width: 992px) {
+  .home-container {
+    text-align: center;
+    flex-direction: column-reverse;
   }
-  
+
+  .home-image {
+    margin-bottom: 30px;
+  }
+
+  .home-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .home-content p {
+    font-size: 1.1rem;
+  }
+}

@@ -9,8 +9,9 @@
 
 .social-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 20px;
+  gap:100px;
 }
 
 .social-links a {
@@ -53,7 +54,7 @@
 }
 
 .contact-form button {
-  background-color: #9ce39d;
+  background-color: #74f476;
   color: #fff;
   border: none;
   padding: 10px 20px;

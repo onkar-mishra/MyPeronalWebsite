@@ -1,66 +1,71 @@
 import React from 'react';
-import { FaEnvelope, FaGithub, FaLinkedin, FaArrowDown} from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import './Contact.css';
 
 const Contact = () => {
   const SOCIAL = [
     {    
-    id: 1,
-    link: "mailto:onkarmishra27@gmail.com", 
-    icon: <FaEnvelope />,
+      id: 1,
+      link: "mailto:onkarmishra27@gmail.com", 
+      icon: <FaEnvelope />,
     },
     {
-    id: 2,
-    link: "https://github.com/onkar-mishra",
-    icon: <FaGithub />,
+      id: 2,
+      link: "https://github.com/onkar-mishra",
+      icon: <FaGithub />,
     },
     {
-    id: 3,
-    link: "https://www.linkedin.com/in/onkar-mishra27/",
-    icon: <FaLinkedin />,
+      id: 3,
+      link: "https://www.linkedin.com/in/onkar-mishra27/",
+      icon: <FaLinkedin />,
     },
-  ]
+  ];
+
   return (
-    <div className='contact-container' >
-      <br/>
-      <div className='contact-content'>
-          <div className='center'>
-            <p style={{marginTop:"-2px"}}> Feel free to contact me using preferred medium.</p>
+    <div className='contact-container container my-5'>
+      <div className='text-center'>
+        <p>Feel free to contact me using your preferred medium.</p>
+      </div>
+      <div className='social-links mb-4'>
+        {SOCIAL.map(({ id, link, icon }) => (
+          <a 
+            key={id} 
+            href={link} 
+            target='_blank' 
+            rel="noopener noreferrer" 
+            className='mx-3 duration-200 ease-in-out hover:text-rose-400'
+          >
+            {icon}
+          </a>
+        ))}
+      </div>
+      <div className='contact-form'>
+        <form action="https://getform.io/f/pbgxxzpa" method="POST">
+          <div className="row">
+            <div className="col-12 mb-3">
+              <label>Name</label>
+              <input type='text' name='name' className="form-control" required />
+            </div>
+            <div className="col-12 mb-3">
+              <label>Phone</label>
+              <input type='text' name='phone' className="form-control" />
+            </div>
+            <div className="col-12 mb-3">
+              <label>Email</label>
+              <input type='email' name='email' className="form-control" required />
+            </div>
+            <div className="col-12 mb-3">
+              <label>Message</label>
+              <textarea name='message' rows="5" className='form-control' required></textarea>
+            </div>
           </div>
-          <div className='social-links' >
-            {SOCIAL.map(({id,link,icon})=>(
-              <a href={link} target='_blank' rel="noopener noreferrer" className='duration-200 ease-in-out hover:text-rose-400'>{icon}</a>
-            ))}
+          <div className='text-center'>
+            <button type="submit" className='btn btn-success'>SEND MESSAGE</button>
           </div>
-          <div className='contact-form'>
-            <form action="https://getform.io/f/pbgxxzpa" method="POST">
-              <div>
-                <div >
-                  <label >Name</label>
-                  <input type='text' name='name'/>
-                </div>
-                <div>
-                  <label >Phone</label>
-                  <input type='text' name='phone'/>
-                </div>
-                <div >
-                  <label >Email</label>
-                  <input type='text' name='email' />
-                </div>
-                <div >
-                  <label >Message</label>
-                  <textarea name='message' rows="10" className='border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white resize-none' >
-                  </textarea>
-                </div>
-              </div>
-              <div className='center'>
-                <button >SEND MESSAGE</button>
-              </div>
-            </form>
-          </div>
+        </form>
       </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
